@@ -46,7 +46,7 @@
         </nav>
         <div class="col-md-10 col-lg-10 col-xl-10 col-12 shadow-lg" id="content">
             <div class="topper">            
-            <h1 class="dash">Dashboard</h1>
+            <h1 class="dash">Add New Moderator</h1>
             <div class="dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fas fa-user"></i>
@@ -60,22 +60,37 @@
             </div>
             </div>
 
-            <div class="boxes">
-                <div class="box box1 shadow-lg">
-                    <h2>0</h2>
-                    <p>Pending Approvals</p>
-                    <div class="detailslink"><a href="#" class="view-details">View Details</a><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="newmod">
+            <form action="submit_newmod.php" method="POST">
+            <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
                 </div>
-                <div class="box box2 shadow-lg">
-                    <h2>0</h2>
-                    <p>Pending Edits</p>
-                    <div class="detailslink"><a href="#" class="view-details">View Details</a><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
                 </div>
-                <div class="box box3 shadow-lg">
-                    <h2>0</h2>
-                    <p>Total Events</p>
-                    <div class="detailslink"><a href="#" class="view-details">View Details</a><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
+                <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="confirm_password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                </div>
+                </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
             </div>
         </div>
     </div>
