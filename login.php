@@ -53,7 +53,7 @@
     
                     <!-- Submit button -->
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-primary px-5 py-2">Log In</button>
+                        <button onclick="window.location.href = 'admin.php'" type="submit" class="btn btn-primary px-5 py-2">Log In</button>
                     </div>
     
                     <p class="mt-2 text-center">
