@@ -21,7 +21,7 @@
         <div class="w-100" style="max-width: 400px;">
             <div class="p-4 login">    
                 <div class="text-center mb-2">
-                    <h2><b>Student Log In</b></h2>
+                    <h2><b>Log In</b></h2>
                 </div>
 
                 <form autocomplete="on">
@@ -36,7 +36,7 @@
                         <label for="password" class="form-label"><b>Password</b></label>
                         <div class="input-group">
                             <input type="password" class="form-control" id="password" name="password" required autocomplete="current-password">
-                            <button class="btn btn-outline-secondary" type="button" id="togglePassword"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                            <button onclick="window.location.href = 'admin.php'" class="btn btn-outline-secondary" type="button" id="togglePassword"><i class="fa fa-eye" aria-hidden="true"></i></button>
                         </div>
                     </div>
     
